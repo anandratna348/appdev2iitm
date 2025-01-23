@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Report for {{ month }} {{ year }}</title>
+</head>
+<body>
+    <h2>Hello {{ professional.name }},</h2>
+    <p>Here is your work summary for {{ month }} {{ year }}:</p>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Service ID</th>
+                <th>Service Name</th>
+                <th>Date of Request</th>
+                <th>Date of Completion</th>
+                <th>Hours Worked</th>
+                <th>Total Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for request in completed_requests %}
+                <tr>
+                    <td>{{ request.id }}</td>
+                    <td>{{ request.service_name }}</td>
+                    <td>{{ request.date_of_request.strftime('%Y-%m-%d') }}</td>
+                    <td>{{ request.date_of_completion.strftime('%Y-%m-%d') }}</td>
+                    <td>{{ request.hours_worked }}</td>
+                    <td>{{ request.total_price }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <p>Thank you for your hard work!</p>
+</body>
+</html>

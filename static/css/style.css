@@ -1,0 +1,1546 @@
+/*----------------------------------------------------------------login---------------------------------------------------------------*/
+/* Center the login container on the screen */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 20px;
+}
+
+/* Card style for login form */
+.login-card {
+  width: 100%;
+  max-width: 400px; /* Limit max width */
+  background: #fff; /* White background for card */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px;
+}
+
+/* Styling for headings */
+.login-card h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #007bff; /* Blue border on focus */
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+/* Button styling */
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff; /* Blue button */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.btn:disabled {
+  background-color: #6c757d; /* Gray color for disabled button */
+  cursor: not-allowed;
+}
+
+/* Alert message styles */
+.alert {
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* Link styling */
+.router-link {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.router-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 576px) {
+  .login-card {
+    padding: 15px;
+  }
+
+  .login-card h2 {
+    font-size: 20px;
+  }
+
+  .form-control {
+    font-size: 13px;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+}
+
+
+
+/*---------------------------------------------------home & navbar-----------------------------------------------------------------*/
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.home-header {
+  text-align: center;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  padding: 50px 20px;
+  border-radius: 8px;
+}
+
+.home-header h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.home-header p {
+  font-size: 1.2em;
+}
+
+.btn-get-started {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff4757;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn-get-started:hover {
+  background-color: #e84118;
+}
+
+.home-services {
+  margin: 40px 0;
+}
+
+.home-services h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.service-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card h3 {
+  margin: 15px 0 10px;
+  color: #333;
+}
+
+.service-card p {
+  color: #666;
+}
+
+.home-footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #666;
+}
+
+
+/*-----------------------------------------------------professional dashboard -----------------------------------------------------*/
+/* Ensure the table is visually consistent */
+table.table-bordered {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table.table-bordered th,
+table.table-bordered td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+/* Custom styles for Hourly Rate */
+table.table-bordered td b {
+  font-weight: bold;
+}
+
+table.table-bordered td {
+  font-size: 14px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.alert {
+  margin-top: 20px;
+}
+
+.alert-info {
+  background-color: #cce5ff;
+  border-color: #b8daff;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+/* Container for the form */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form styling */
+form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Form labels */
+label {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Form input fields */
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+input:focus,
+select:focus {
+  border-color: #4b8dff;
+  outline: none;
+}
+
+/* Button styling */
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Success and Error message */
+.alert {
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 4px;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+
+/* Professional Dashboard Container */
+/* General Styling */
+
+
+
+/*--------------------------------------------------------- register---------------------------------------------*/
+
+.register-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.success-message {
+  margin-top: 20px;
+  color: green;
+  text-align: center;
+}
+
+.error-message {
+  margin-top: 20px;
+  color: red;
+  text-align: center;
+}
+
+/*---------------------------------------------------Customer Dashboard-----------------------------------------*/
+/* Style for the Service Request History Table */
+.table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+/* Styling for table headers */
+.table thead th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #dee2e6;
+}
+
+/* Styling for table rows */
+.table tbody tr {
+  text-align: center;
+  border-bottom: 1px solid #dee2e6;
+}
+
+/* Style for the individual table cells */
+.table td {
+  padding: 12px;
+  border: 1px solid #dee2e6;
+  vertical-align: middle;
+}
+
+/* Styling for success and error messages */
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Styling for the rating input and button */
+input[type="number"] {
+  width: 80px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+button.btn {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+}
+
+button.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Centering the table on the page */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Container for the service search page */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Styling the form inputs */
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+.btn-update-profile {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-update-profile:hover {
+  background-color: #218838;
+}
+
+.btn-success {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+/* Alerts */
+.alert {
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.alert-success {
+  background-color: #28a745;
+  color: white;
+}
+
+.alert-warning {
+  background-color: #ffc107;
+  color: black;
+}
+
+.alert-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* List Group */
+.list-group-item {
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.list-group-item:hover {
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-control {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #565e64;
+}
+
+.btn-success {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+.alert {
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.alert-warning {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeeba;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.list-group {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-group-item {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+  transition: box-shadow 0.3s;
+}
+
+.list-group-item:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.list-group-item h5 {
+  margin-bottom: 5px;
+  color: #007bff;
+}
+
+.list-group-item p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+
+  .form-control {
+    font-size: 14px;
+  }
+  .btn-update-profile {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .btn-update-profile:hover {
+    background-color: #45a049;
+  }
+ 
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #c3e6cb;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Alerts */
+.alert {
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* Table Styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.table th,
+.table td {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.table th {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table tr:hover {
+  background-color: #ddd;
+}
+
+/* Input and Button Styles */
+input[type="number"] {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 60px;
+  text-align: center;
+}
+
+button {
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button.btn-sm {
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .table th, .table td {
+    font-size: 12px;
+    padding: 8px 6px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}
+
+
+}
+
+
+/*---------------------------------------------------------Admin Dashboard-------------------------------------------------------*/
+
+.admin-dashboard-unique {
+  padding: 20px;
+}
+
+.admin-dashboard-title-unique {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.admin-dashboard-buttons-unique {
+  margin-bottom: 20px;
+}
+
+.services-table-unique {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.services-table-unique th, .services-table-unique td {
+  padding: 10px;
+  text-align: left;
+}
+
+.service-name-header-unique,
+.service-description-header-unique,
+.service-time-header-unique,
+.service-price-header-unique,
+.service-actions-header-unique {
+  font-weight: bold;
+}
+
+.add-new-service-title-unique {
+  font-size: 1.5rem;
+  margin-top: 30px;
+}
+
+.add-service-form-unique {
+  margin-top: 10px;
+}
+.new-service-id-unique,
+.new-service-name-unique,
+.new-service-description-unique,
+.new-service-time-unique,
+.new-service-price-unique {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+.add-service-button-unique {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.add-service-button-unique:hover {
+  background-color: #45a049;
+}
+
+.update-service-unique, .delete-service-unique {
+  padding: 5px 10px;
+  margin-right: 5px;
+}
+
+.update-service-unique {
+  background-color: #FFC107;
+  color: white;
+}
+
+.delete-service-unique {
+  background-color: #F44336;
+  color: white;
+}
+
+
+/*---------------------------------------------------AdminCustomerRequest-------------------------------------------*/
+/* Add general styles for the page */
+.customer-requests {
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 0px;
+  background-color: #f9f9f9;
+  border-radius: 0px;
+  box-shadow: 0 2px 10px rgba(253, 253, 249, 0.1);
+}
+
+/* Title styles */
+.customer-requests h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #4a4a4a;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Table styling */
+.customer-requests table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.customer-requests th, .customer-requests td {
+  padding: 12px 15px;
+  text-align: left;
+  font-size: 1rem;
+  color: #333;
+}
+
+.customer-requests th {
+  background-color: #4f2a97; /* Purple background */
+  color: rgb(19, 17, 17);
+  font-weight: bold;
+}
+
+.customer-requests td {
+  background-color: #fafafa;
+}
+
+.customer-requests tr:nth-child(even) td {
+  background-color: #f1f1f1;
+}
+
+/* Hover effect on rows */
+.customer-requests tr:hover {
+  background-color: #ececec;
+}
+
+/* Button styling (if you need any) */
+.customer-requests .btn {
+  padding: 10px 15px;
+  font-size: 1rem;
+  background-color: #4f2a97;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.customer-requests .btn:hover {
+  background-color: #6a4cb2; /* Darker purple */
+}
+
+/* Make the table responsive for smaller screens */
+@media (max-width: 768px) {
+  .customer-requests {
+      padding: 10px;
+  }
+
+  .customer-requests table {
+      font-size: 0.9rem;
+  }
+
+  .customer-requests th, .customer-requests td {
+      padding: 8px 10px;
+  }
+
+  .customer-requests h1 {
+      font-size: 1.5rem;
+  }
+}
+
+/*--------------------------------------------------------ManageProfessional--------------------------------------------------*/
+/* General Styles */
+.admin-professional-management {
+  padding: 20px;
+}
+
+#professional-management-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#professional-error-message {
+  margin-bottom: 20px;
+}
+
+/* Table Styles */
+#professionals-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#professionals-table th, #professionals-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+#professionals-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+#professionals-table td {
+  background-color: #fff;
+}
+
+#professional-id-header,
+#professional-name-header,
+#professional-service-name-header,
+#professional-rate-header,
+#professional-status-header,
+#professional-actions-header {
+  font-size: 1.1rem;
+}
+
+#professional-status-header {
+  text-align: center;
+}
+
+/* Button Styles */
+.btn {
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn-success {
+  background-color: #28a745;
+  color: white;
+  border: none;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+}
+
+.btn-info {
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+}
+
+/* Status Colors */
+.text-success {
+  color: #28a745;
+}
+
+.text-danger {
+  color: #dc3545;
+}
+
+/* Table Row Hover */
+#professionals-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  #professionals-table {
+    font-size: 0.9rem;
+  }
+
+  #professional-management-title {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+  }
+}
+/*-------------------------------------------------------ManageProfessionalbyAdmin--------------------------------------*/
+/* General Styles */
+.professional-management-container {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.professional-management-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Error Message */
+.professional-error-message {
+  color: red;
+  margin-bottom: 15px;
+}
+
+/* Table Styles */
+.professional-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.professional-table-header {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.professional-table-row:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.professional-table-row td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+/* Buttons */
+.btn {
+  padding: 8px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.btn-activate {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.btn-activate:hover {
+  background-color: #218838;
+}
+
+.btn-deactivate {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn-deactivate:hover {
+  background-color: #c82333;
+}
+
+.btn-history {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-history:hover {
+  background-color: #0056b3;
+}
+
+/* Fix black background issue */
+.btn-history {
+  background-color: transparent;
+  color: #007bff;
+}
+
+.btn-history:hover {
+  background-color: #f0f8ff;
+  color: #0056b3;
+  border: 1px solid #007bff;
+}
+/*-------------------------------------------------------History Professional Admin---------------------------------------------*/
+/* Container for the service request history */
+.history-container-unique {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.history-title-unique {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.history-error-message-unique,
+.no-history-message-unique {
+  color: red;
+  margin: 20px 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.loading-message-unique {
+  font-size: 16px;
+  color: #555;
+  text-align: center;
+}
+
+/* History table styles */
+.history-table-unique {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.history-table-header-unique {
+  background-color: #34495e;
+  color: #fff;
+  font-weight: bold;
+}
+
+.history-table-header-unique th {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.history-table-row-unique:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+.history-table-row-unique:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.history-table-row-unique td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 14px;
+  color: #2c3e50;
+}
+
+.history-table-row-unique td:first-child {
+  font-weight: bold;
+}
+
+.history-table-row-unique td:last-child {
+  color: #2980b9;
+  font-style: italic;
+}
+
+/*-------------------------------------------------Professional Dashboard-------------------------------------------------------*/
+/* Scope styles to #professional-dashboard */
+#professional-dashboard {
+  font-family: Arial, sans-serif;
+}
+
+#professional-dashboard .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#professional-dashboard h1 {
+  text-align: center;
+  color: #4caf50;
+}
+
+#professional-dashboard h3 {
+  margin-top: 20px;
+  color: #333;
+}
+
+#professional-dashboard .rating-section p {
+  font-size: 18px;
+  color: #555;
+}
+
+#professional-dashboard .button-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+#professional-dashboard .button-container .btn {
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+#professional-dashboard .service-requests-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#professional-dashboard .service-requests-section table th,
+#professional-dashboard .service-requests-section table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+#professional-dashboard .service-requests-section table th {
+  background-color: #f4f4f4;
+  color: #333;
+  font-weight: bold;
+}
+
+#professional-dashboard .service-requests-section table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#professional-dashboard .service-requests-section table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+#professional-dashboard .service-requests-section table .btn {
+  margin: 0 5px;
+}
+
+#professional-dashboard .alert {
+  text-align: center;
+  background-color: #ffecb3;
+  color: #8a6d3b;
+  border: 1px solid #faebcc;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/*------------------------------------------------------Service History Table-----------------------------------------------------*/
+/* Container for the entire service history table */
+.professional-service-history-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  max-width: 1000px;
+  margin: 20px auto;
+}
+
+/* Title of the service history */
+.professional-history-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Loading and error messages */
+.loading-message,
+.error-message {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+}
+
+/* Table styles */
+.service-history-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Table headers */
+.service-history-table-header {
+  background-color: #5a4f8d;
+  color: white;
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Table rows and data */
+.service-history-table-data {
+  background-color: #ffffff;
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Hover effect on rows */
+.service-history-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Handle empty state for the table */
+.service-history-table-empty {
+  text-align: center;
+  color: #777;
+  font-size: 18px;
+  padding: 20px;
+}
+
+/* For error message */
+.error-message {
+  color: red;
+  font-weight: bold;
+}
+
+/* Responsiveness: Make sure the table looks good on mobile */
+@media (max-width: 768px) {
+  .service-history-table {
+    font-size: 14px;
+  }
+  .service-history-table-header,
+  .service-history-table-data {
+    padding: 10px;
+  }
+}
+/*----------------------------------------------------------------Admin charts----------------------------------------------------/*
+/* Ensure this CSS targets only the Admin Dashboard component */
+.admin-dashboard-container {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f4f7fa;
+}
+
+.admin-dashboard-container h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.chart-container {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+/* Optional: Add styling for the canvas */
+.chart-container canvas {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
