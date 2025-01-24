@@ -19,8 +19,8 @@ app = Flask(__name__)
 app.config.from_object(config.DevelopmentConfig)
 app.config['MAIL_SERVER']='smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = 'anandratna348@gmail.com'
-app.config['MAIL_PASSWORD'] = 'bbtc htdv cnxd kqnm'
+app.config['MAIL_USERNAME'] = 'abcd@gmail.com'
+app.config['MAIL_PASSWORD'] = 'xxxx xxxx xxxx xxxx'
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 
@@ -133,7 +133,7 @@ def send_monthly_reports():
 
             # Send the email
             msg = Message(f"Your Service Report for {month_name} {year}",
-                          sender='anandratna348@gmail.com', 
+                          sender='abcd@gmail.com', 
                           recipients=[user.email])
             msg.html = customer_report
             mail.send(msg)
@@ -1018,7 +1018,7 @@ def request_service():
     """
 
     try:
-        msg = Message(subject=subject, sender="anandratna348@gmail.com", recipients=[professional_email])
+        msg = Message(subject=subject, sender="abcd@gmail.com", recipients=[professional_email])
         msg.body = email_body
         mail.send(msg)
     except Exception as e:
